@@ -4,10 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>작가 8인 판화 컬렉션</title>
-<meta name="description" content="구자승, 김환기, 유영국, 이배, 이성자, 이왈종, 이지연, 하태임의 한정판 판화 컬렉션. 2026년 11월 16일 기준 구매 가능한 작품 목록.">
+<meta name="description" content="구자승, 김환기, 유영국, 이배, 이성자, 이왈종, 이지연, 하태임의 한정판 판화 중 2026년 11월 16일 기준 구매 가능한 작품 목록입니다.">
 <meta property="og:title" content="작가 8인 판화 컬렉션">
 <meta property="og:description" content="작가 8인의 한정판 판화 중 지금 구매 가능한 작품 목록입니다.">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -15,7 +16,6 @@
 /* reset */
 :root{color-scheme:light}
 *{box-sizing:border-box}
-html{scroll-padding-top:0}
 body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}
 img{max-width:100%}
 [hidden]:not([hidden=until-found i]){display:none!important}
@@ -113,11 +113,9 @@ section.artist{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);
 body.has-bar .wrap{padding-bottom:180px}
 footer{padding-top:28px;font-size:12.5px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-
+</style>
 </head>
 <body>
-</style>
-
 <div class="wrap">
   <header class="top">
     <div class="eyebrow">Limited Edition Prints · 2026.11.16 기준 구매 가능 작품</div>
@@ -148,8 +146,6 @@ footer{padding-top:28px;font-size:12.5px;color:var(--muted);display:flex;flex-di
     </div>
   </div>
 </div>
-
-
 <script>
 // [상품번호, 작품명, 정가, 할인가, 크기, 제작방식·소재, 에디션]
 const ARTISTS=[
@@ -257,6 +253,6 @@ $('copy').addEventListener('click',()=>{
   try{navigator.clipboard.writeText(m).then(()=>{$('toast').textContent='복사했어요. 010-8460-8689로 문자나 카카오톡에 붙여 넣어 보내 주세요.';},fallback);}catch(e){fallback();}
 });
 render();
-
+</script>
 </body>
 </html>
